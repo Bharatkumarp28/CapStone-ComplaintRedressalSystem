@@ -14,9 +14,24 @@ export class ListAdminComponent implements OnInit {
   constructor(private _adminService: AdminService) { }
 
   ngOnInit(): void {
-    this._adminService.getAdmin().subscribe(
-      data => this.admin = data
-    )
+    this.listAdmin();
   }
+
+  deleteAdmin(id: number){
+    this._adminService.deleteAdmin(id).subscribe(
+      data => {
+        console.log('deleted admin', data);
+        this.listAdmin();
+     }
+    )
+
+ }
+
+ listAdmin() {
+  this._adminService.getAdmin().subscribe(
+    data => this.admin = data
+  )
+
+ }
 
 }

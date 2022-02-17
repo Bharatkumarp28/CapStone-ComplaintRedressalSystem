@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.capstone.ComplaintRedressalSystem.model.Admin;
+import com.capstone.ComplaintRedressalSystem.repository.AdminRepository;
 import com.capstone.ComplaintRedressalSystem.service.AdminService;
 
 @CrossOrigin(origins = "http://localhost:4200")
@@ -26,6 +27,7 @@ public class AdminController {
 	
 	@Autowired
 	private AdminService adminService;
+	private AdminRepository adminRepo;
 	
 	@GetMapping("/get-admin")
 	public ResponseEntity<List<Admin>> getAdminDetails()
@@ -33,6 +35,16 @@ public class AdminController {
 		List<Admin> admin = adminService.findAll();
 		return new ResponseEntity<List<Admin>>(admin, HttpStatus.OK);
 	}
+	
+	
+	@GetMapping("/get-adminlist")
+	public ResponseEntity<List<Admin>> findAllBySoftDelete()
+	{
+		List<Admin> admin = adminRepo.findAllBySoftDelete("0");
+		return new ResponseEntity<List<Admin>>(admin, HttpStatus.OK);
+	}
+	
+	
 	
 	@GetMapping("/get-admin/{id}")
 	public ResponseEntity<Admin> getAdminById(@PathVariable("id") Long id)

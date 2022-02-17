@@ -6,6 +6,6 @@
     <h3>{{adm.emailId}}</h3>
     <h3>{{adm.password}}</h3>
     <a routerLink="/editadmin/{{adm.id}}">Edit</a>
-    
+    <button (click)= "deleteAdmin(adm.id)">Delete</button>
 
 </div>
