@@ -10090,3 +10090,21 @@ java.lang.Error: SWT Resource was not properly disposed
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-17 08:07:08.794
 !MESSAGE executing callback sts4.classpath.WefFDSBN SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2022-02-17 08:26:57.401
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-17 08:27:38.277
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-17 08:27:38.287
+!MESSAGE classpath=99 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-17 08:27:38.293
+!MESSAGE buffering callback sts4.classpath.WefFDSBN ComplaintRedressalSystem false 99
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-17 08:27:38.295
+!MESSAGE executing callback sts4.classpath.WefFDSBN 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-17 08:27:38.362
+!MESSAGE executing callback sts4.classpath.WefFDSBN SUCCESS [done]

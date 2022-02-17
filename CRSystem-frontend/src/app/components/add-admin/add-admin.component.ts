@@ -22,9 +22,9 @@ export class AddAdminComponent implements OnInit {
       this._adminService.getAdminbyId(id).subscribe(
         data => this.admin = data
       )
-      this._adminService.deleteAdmin(id).subscribe(
-        data => this.admin = data
-      )
+      // this._adminService.deleteAdmin(id).subscribe(
+      //   data => this.admin = data
+      // )
       
     }
   }
